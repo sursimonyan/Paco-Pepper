@@ -1,0 +1,105 @@
+:root {
+  --white: #fff;
+  --light-green: #94d591;
+  --btn-green: #33915c;
+  --text-green: #134e0d;
+  --orange-gradient: linear-gradient(92.59deg, #ea6b26 0%, #feaa3b 100%);
+}
+
+body {
+  font-family: "Alexandria", sans-serif;
+}
+
+.opened-menu {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  font-family: "Alexandria", sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  height: 50px;
+  padding-inline: 32px;
+  font-size: 18px;
+  border-radius: 25px;
+  transition: all 150ms ease;
+}
+
+.green-btn {
+  color: var(--white);
+  background-color: var(--btn-green);
+}
+
+.green-btn:hover {
+  background-color: var(--text-green);
+}
+
+.white-btn {
+  background-color: var(--white);
+}
+
+.mobile {
+  display: none;
+}
+
+.marked-text {
+  position: relative;
+}
+
+.marked-text:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 22px;
+  background: url("../images/text-underline.png") center/contain no-repeat;
+  z-index: -1;
+}
+
+.gradient-text {
+	background: var(--orange-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    padding-inline: 16px;
+  }
+
+  .btn {
+    height: 32px;
+    padding-inline: 20px;
+    font-size: 12px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}

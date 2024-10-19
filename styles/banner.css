@@ -1,0 +1,115 @@
+.banner {
+  display: flex;
+  height: 100vmax;
+  max-height: 694px;
+  background: url('../images/header-banner.jpg') center/cover no-repeat;
+  margin-bottom: 64px;
+} 
+
+.banner__inner {
+  position: relative;
+  margin: auto;
+  z-index: 2;
+}
+
+.banner__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+  margin-bottom: 64px;
+}
+
+.banner__left {
+  max-width: 660px;
+  width: 75%;
+  color: var(--white);
+}
+
+.banner__rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.banner__rating_stars {
+  display: flex;
+  column-gap: 2px;
+  margin-right: 10px;
+}
+
+.banner__rating p {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+}
+
+.banner__title {
+  font-size: 72px;
+  font-weight: 800;
+}
+
+.banner__right {
+  max-width: 352px;
+  width: 31%;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  line-height: 1.445;
+  color: var(--white);
+}
+
+.banner__btn {
+  margin-bottom: 64px;
+}
+
+.banner__featured_text {
+  margin-bottom: 8px;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  color: var(--white);
+}
+
+.banner__brands {
+  display: flex;
+  column-gap: 52px;
+}
+
+@media screen and (max-width: 991px) {
+  .banner {
+    max-height: 654px;
+  }
+
+  .banner__left {
+    max-width: 490px;
+    width: 65%;
+  }
+
+  .banner__right {
+    width: 50%;
+  }
+
+  .banner__right {
+    font-size: 18px;
+  }
+
+  .banner__title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .banner__top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .banner__left,
+  .banner__right {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .banner__left {
+    max-width: 490px;
+    margin-bottom: 32px;
+  }
+}
