@@ -46,6 +46,7 @@
 .banner__title {
   font-size: 72px;
   font-weight: 800;
+  color: var(--light-600);
 }
 
 .banner__right {
@@ -97,6 +98,10 @@
 }
 
 @media screen and (max-width: 640px) {
+  .banner {
+    margin-bottom: 24px;
+  }
+
   .banner__top {
     flex-direction: column;
     align-items: flex-start;

@@ -1,9 +1,19 @@
 :root {
   --white: #fff;
+  --light-600: #FAFFF7;
+  --light-500: #FDFCFB;
+  --light-green-600: #ECF7ED;
+  --light-green-500: #C3C889;
+  --light-blue-600: #ECF0F7;
+  --light-orange-600: #F6F1ED;
+  --orange: #EA6B26;
+  --dark-orange: #CE5A1B;
   --light-green: #94d591;
   --btn-green: #33915c;
   --text-green: #134e0d;
   --orange-gradient: linear-gradient(92.59deg, #ea6b26 0%, #feaa3b 100%);
+  --brown-gradient: linear-gradient(180deg, rgba(87, 34, 5, 0) 37.5%, #572205 100%);
+  --main-shadows: 0 2px 25px 0 rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -54,6 +64,15 @@ button {
   background-color: var(--text-green);
 }
 
+.orange-btn {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+.orange-btn:hover {
+  background-color: var(--dark-orange);
+}
+
 .white-btn {
   background-color: var(--white);
 }
@@ -84,12 +103,42 @@ button {
   -webkit-text-fill-color: transparent;
 }
 
+.second-title {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.second-title-green {
+  color: var(--text-green);
+}
+
+.second-title-white {
+  color: var(--white);
+}
+
+.third-title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.third-title-green {
+  color: var(--text-green);
+}
+
+.third-title-white {
+  color: var(--white);
+}
+
+.main-shadow {
+  box-shadow: var(--main-shadows);
+}
+
 @media screen and (max-width: 991px) {
   .container {
     padding-inline: 16px;
   }
 
-  .btn {
+  .btn:not(.mobile-big-btn) {
     height: 32px;
     padding-inline: 20px;
     font-size: 12px;
@@ -101,5 +150,10 @@ button {
 
   .mobile {
     display: block;
+  }
+
+  .second-title {
+    font-size: 32px;
+    font-weight: 700;
   }
 }
