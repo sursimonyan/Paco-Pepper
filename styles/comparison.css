@@ -1,0 +1,132 @@
+.comparison {
+  margin-bottom: 64px;
+}
+
+.comparison__title {
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.comparison__table {
+  display: flex;
+  align-items: flex-end;
+  max-width: 928px;
+  width: 100%;
+  margin-inline: auto;
+  margin-bottom: 64px;
+}
+
+.comparison__table > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.comparison__name {
+  max-width: 288px;
+  width: 32%;
+}
+
+.comparison__table > div:not(.comparison__name) {
+  max-width: 212px;
+  width: 23%;
+}
+
+.comparison__name p {
+  height: 64px;
+  padding: 16px;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.comparison__name p:nth-child(odd) {
+  background-color: var(--light-green-600);
+  border-radius: 6px 0 0 6px;
+}
+
+.comparison__table h5 {
+  padding-block: 32px;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--btn-green);
+  text-align: center;
+}
+
+.comparison__table span {
+  width: 100%;
+  height: 64px;
+  padding: 16px;
+  text-align: center;
+}
+
+.comparison__table span img {
+  width: 32px;
+  height: 32px;
+}
+
+.comparison__table span:nth-child(even) {
+  background-color: var(--light-green-600);
+}
+
+.companion__paco {
+  border: 2px solid var(--btn-green);
+  border-radius: 8px;
+}
+
+.companion__paco span {
+  border-radius: 0 6px 6px 0;
+}
+
+.comparison__btn {
+  display: block;
+  height: 54px;
+  margin-inline: auto;
+  padding-inline: 32px;
+  font-size: 18px;
+  border-radius: 28px;
+}
+
+@media screen and (max-width: 991px) {
+  .comparison__title {
+    margin-bottom: 16px;
+  }
+
+  .comparison__table {
+    margin-bottom: 16px;
+  }
+
+  .comparison__table h5 {
+    padding-block: 16px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .comparison {
+    margin-bottom: 28px;
+  }
+
+  .comparison__table h5 {
+    padding-block: 0;
+    padding-inline: 16px;
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    margin: auto;
+  }
+
+  .comparison__name {
+    width: 44%;
+  }
+
+  .comparison__table > div:not(.comparison__name) {
+    width: 21%;
+  }
+
+  .comparison__table p {
+    padding-right: 0;
+  }
+
+  .comparison__table span {
+    padding: 16px 8px;
+  }
+}

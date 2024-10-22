@@ -91,13 +91,13 @@
   color: var(--text-green);
 }
 
-.trusted__rating {
+.user__rating {
   display: flex;
   align-items: center;
   margin-bottom: 34px;
 }
 
-.trusted__name {
+.user__name {
   margin-right: 10px;
   font-family: "Jost", sans-serif;
   font-size: 18px;
