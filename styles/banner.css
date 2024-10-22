@@ -32,7 +32,7 @@
   margin-bottom: 16px;
 }
 
-.banner__rating_stars {
+.rating-stars {
   display: flex;
   column-gap: 2px;
   margin-right: 10px;

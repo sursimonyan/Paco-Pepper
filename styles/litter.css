@@ -1,0 +1,431 @@
+.litter {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 54px;
+}
+
+.litter__left {
+  max-width: 544px;
+  width: 48%;
+}
+
+.litter__slider {
+  margin-bottom: 32px;
+}
+
+.litter__slider_main_image_wrapper {
+  position: relative;
+  aspect-ratio: 1/1;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.litter__slider_main_image {
+  height: 100%;
+}
+
+.litter__slider_main_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.litter__slider_arrow_left,
+.litter__slider_arrow_right {
+  position: absolute;
+  display: block;
+  top: 50%;
+  width: 64px;
+  height: 64px;
+  transform: translateY(-50%);
+}
+
+.litter__slider_arrow_left {
+  left: 16px;
+}
+
+.litter__slider_arrow_right {
+  right: 16px;
+}
+
+.litter__slider_items {
+  display: flex;
+  gap: 16px;
+}
+
+.litter__slider_items > div {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.litter__package_info {
+  padding: 12px 16px;
+  background-color: var(--light-green-600);
+  border-radius: 4px;
+}
+
+.litter__package_info + .litter__package_info {
+  margin-top: 6px;
+}
+
+.litter__package_info_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.litter__open_close_icon {
+  display: flex;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.litter__open_close_icon img {
+  margin: auto;
+  transform: rotateZ(180deg);
+  transition: transform 300ms ease;
+  pointer-events: none;
+}
+
+.litter__open_close_icon.open img {
+  transform: rotateZ(0);
+}
+
+.litter__package_info_title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.litter__package_info_title h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.litter__text_wrap {
+  max-height: 0;
+  transition: max-height 300ms ease;
+  overflow: hidden;
+}
+
+.litter__text_wrap.open {
+  max-height: 200px;
+}
+
+.litter__text_wrap p {
+  padding-top: 16px;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.litter__right {
+  max-width: 480px;
+  width: 48%;
+}
+
+.litter__title {
+  margin-bottom: 18px;
+}
+
+.litter__rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.litter__rating_name {
+  margin-left: 9px;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  color: var(--text-green);
+}
+
+.litter__description {
+  margin-bottom: 18px;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  color: var(--text-green);
+}
+
+.litter__bag_info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--grey);
+}
+
+.litter__bag_info_item {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  width: 50%;
+  margin-bottom: 8px;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  color: var(--text-green);
+}
+
+.litter__weight {
+  margin-bottom: 34px;
+  padding-bottom: 10px;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  color: var(--text-green);
+  border-bottom: 1px solid var(--grey);
+}
+
+.litter__bags {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.litter__bags_item {
+  position: relative;
+  width: 150px;
+  height: 144px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-green);
+  border: 1px solid var(--btn-green);
+  border-radius: 8px;
+}
+
+.litter__bags_item_choosed {
+  border-width: 2px;
+}
+
+.litter__bags_best_saving {
+  border-color: var(--grey);
+}
+
+.litter__bags_item_top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border-bottom: 1px solid var(--btn-green);
+}
+
+.litter__bags_item_bottom {
+  padding: 9px 6px 14px;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+}
+
+.litter__bags_item_bottom p {
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: var(--text-green);
+}
+
+.litter__bags_item_info {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 32px);
+  height: 16px;
+  font-family: "Jost", sans-serif;
+  font-size: 8px;
+  font-weight: 500;
+  border-radius: 4px 4px 0 0;
+  transform: translateX(-50%);
+}
+
+.most_popular {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+.best_saving {
+  color: var(--btn-green);
+  background-color: var(--light-green);
+}
+
+.litter__bags_item_choosed .litter__bags_item_top {
+  color: var(--white);
+  background-color: var(--btn-green);
+}
+
+.litter__bags_item_choosed .litter__bags_item_bottom {
+  background-color: var(--light-green-600);
+}
+
+.litter__bags_best_saving .litter__bags_item_top {
+  border-color: var(--grey);
+}
+
+.litter__bags_item_price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.litter__bags_item_price span {
+  font-family: "Jost", sans-serif;
+  font-size: 8px;
+  font-weight: 500;
+  color: var(--orange);
+  text-decoration: line-through;
+}
+
+.litter__more {
+  margin-bottom: 18px;
+  font-size: 14px;
+  color: var(--text-green);
+  text-align: center;
+}
+
+.litter__save {
+  margin-bottom: 18px;
+  padding: 16px;
+  background-color: var(--light-green-600);
+  border: 2px solid var(--btn-green);
+  border-radius: 8px;
+}
+
+.litter__save_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.litter__save_inner div {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-green);
+}
+
+.litter__save_inner span {
+  padding: 4px 12px;
+  font-family: "Jost", sans-serif;
+  font-size: 12px;
+  color: var(--white);
+  background-color: var(--btn-green);
+  border-radius: 10px;
+}
+
+.litter__first_delivery {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+  margin-bottom: 8px;
+  padding-bottom: 16px;
+  font-family: "Jost", sans-serif;
+  font-size: 12px;
+  color: var(--text-green);
+  border-bottom: 1px solid var(--light-green);
+}
+
+.litter__first_delivery strong {
+  font-family: "Alexandria", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--btn-green);
+}
+
+.litter__first_delivery span {
+  font-size: 12px;
+  color: var(--orange);
+  text-decoration: line-through;
+}
+
+.litter__features {
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  font-family: "Jost", sans-serif;
+  font-size: 12px;
+  color: var(--text-green);
+  border-bottom: 1px solid var(--light-green);
+}
+
+.litter__features div {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.litter__features div > span {
+  font-weight: 700;
+  color: var(--orange);
+}
+
+.litter__features div + div {
+  margin-top: 6px;
+}
+
+.litter__select {
+  width: 100%;
+  padding: 4px;
+  font-family: "Jost", sans-serif;
+  font-size: 12px;
+  color: var(--text-green);
+  border-color: currentColor;
+  border-radius: 4px;
+  outline: none;
+}
+
+.litter__purchase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-green);
+  background-color: var(--white);
+  border: 1px solid var(--grey);
+  border-radius: 8px;
+}
+
+.litter__purchase p {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.litter__btn_buy {
+  width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  
+}
+
+@media screen and (max-width: 640px) {
+  .litter {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .litter__left,
+  .litter__right {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .litter__bags {
+    justify-content: space-between;
+  }
+
+  .litter__slider {
+    margin-bottom: 16px;
+  }
+}
