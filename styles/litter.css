@@ -67,68 +67,6 @@
   object-fit: cover;
 }
 
-.litter__package_info {
-  padding: 12px 16px;
-  background-color: var(--light-green-600);
-  border-radius: 4px;
-}
-
-.litter__package_info + .litter__package_info {
-  margin-top: 6px;
-}
-
-.litter__package_info_top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.litter__open_close_icon {
-  display: flex;
-  width: 22px;
-  height: 22px;
-  cursor: pointer;
-}
-
-.litter__open_close_icon img {
-  margin: auto;
-  transform: rotateZ(180deg);
-  transition: transform 300ms ease;
-  pointer-events: none;
-}
-
-.litter__open_close_icon.open img {
-  transform: rotateZ(0);
-}
-
-.litter__package_info_title {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.litter__package_info_title h3 {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.litter__text_wrap {
-  max-height: 0;
-  transition: max-height 300ms ease;
-  overflow: hidden;
-}
-
-.litter__text_wrap.open {
-  max-height: 200px;
-}
-
-.litter__text_wrap p {
-  padding-top: 16px;
-  font-family: "Jost", sans-serif;
-  font-size: 18px;
-  line-height: 1.2;
-}
-
 .litter__right {
   max-width: 480px;
   width: 48%;

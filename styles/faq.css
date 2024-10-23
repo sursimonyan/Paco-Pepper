@@ -1,0 +1,22 @@
+.faq {
+  margin-bottom: 96px;
+}
+
+.faq__title {
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+  .faq {
+    margin-bottom: 40px;
+  }
+
+  .faq__title {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+}

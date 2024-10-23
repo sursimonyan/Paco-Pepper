@@ -18,17 +18,17 @@
   --brown-gradient: linear-gradient(
     180deg,
     rgba(87, 34, 5, 0) 37.5%,
-    #572205 100%
+    rgb(87, 34, 5) 100%
   );
   --white-gradient: linear-gradient(
     360deg,
     rgba(250, 255, 247, 0) 0%,
-    #fafff7 64.98%
+    rgb(250, 255, 247) 64.98%
   );
   --white-gradient-vertical: linear-gradient(
     -90deg,
     rgba(250, 255, 247, 0) 0%,
-    #fafff7 64.98%
+    rgb(250, 255, 247) 64.98%
   );
   --btn-orange-gradient: linear-gradient(92.59deg, #ea6b26 0%, #feaa3b 100%);
   --btn-orange-gradient-hover: linear-gradient(
@@ -254,6 +254,72 @@ button {
 .orange-bg {
   background-color: var(--orange);
 }
+
+/* FAQ */
+.faq__package_info {
+  padding: 12px 16px;
+  color: var(--text-green);
+  background-color: var(--light-green-600);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.faq__package_info + .faq__package_info {
+  margin-top: 6px;
+}
+
+.faq__package_info_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq__open_close_icon {
+  display: flex;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.faq__open_close_icon img {
+  margin: auto;
+  transform: rotateZ(180deg);
+  transition: transform 300ms ease;
+  pointer-events: none;
+}
+
+.faq__open_close_icon.open img {
+  transform: rotateZ(0);
+}
+
+.faq__package_info_title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.faq__package_info_title h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.faq__text_wrap {
+  max-height: 0;
+  transition: max-height 300ms ease;
+  overflow: hidden;
+}
+
+.faq__text_wrap.open {
+  max-height: 200px;
+}
+
+.faq__text_wrap p {
+  padding-top: 16px;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+}
+/* /FAQ */
 
 @media screen and (max-width: 1340px) {
   .desktop-lg {

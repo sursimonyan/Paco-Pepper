@@ -76,7 +76,9 @@
 }
 
 .products__btn_small:hover {
+  color: var(--white);
   background-color: var(--light-green);
+  border-color: var(--light-green);
   box-shadow: var(--btn-box-shadow);
 }
 
