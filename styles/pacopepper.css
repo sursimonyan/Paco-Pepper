@@ -54,12 +54,14 @@
   background-color: transparent;
   border: 1px solid currentColor;
   border-radius: 22px;
-  transition: all 150ms ease;
+  transition: all 250ms ease;
 }
 
 .pacopepper__btn:hover {
   color: var(--text-green);
-  background-color: var(--light-500);
+  background-color: var(--light-green-100);
+  box-shadow: var(--main-shadows);
+  
 }
 
 .pacopepper__item_wrapper {
@@ -161,12 +163,13 @@
   background-color: transparent;
   border: 1px solid currentColor;
   border-radius: 22px;
-  transition: all 150ms ease;
+  transition: all 250ms ease;
 }
 
 .pacopepper__item_paws_btn:hover {
   color: var(--white);
-  background-color: var(--orange);
+  background-color: var(--orange-btn);
+  box-shadow: var(--main-shadows);
 }
 
 .pacopepper__order {

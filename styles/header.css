@@ -37,6 +37,15 @@
   z-index: 2;
 }
 
+.header__nav a {
+  color: var(--text-green);
+  transition: color 240ms ease;
+}
+
+.header__nav a:hover {
+  color: var(--light-green);
+}
+
 .header__order {
   display: flex;
   align-items: center;

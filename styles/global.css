@@ -7,7 +7,9 @@
   --light-green-100: #fefffb;
   --light-blue-600: #ecf0f7;
   --light-orange-600: #f6f1ed;
+  --light-orange-500: #fff7f2;
   --orange: #ea6b26;
+  --orange-btn: #ff9442;
   --dark-orange: #ce5a1b;
   --light-green: #94d591;
   --btn-green: #33915c;
@@ -31,11 +33,15 @@
   --btn-orange-gradient: linear-gradient(92.59deg, #ea6b26 0%, #feaa3b 100%);
   --btn-orange-gradient-hover: linear-gradient(
     92.59deg,
-    #feaa3b 0%,
-    #ea6b26 100%
+    #ff9442 0%,
+    #ff9442 100%
   );
+  --btn-orange-gradient-2: linear-gradient(92.59deg, #feaa3b 0%, #ea6b26 100%);
   --grey: #b7c4b6;
   --main-shadows: 0 2px 25px 0 rgba(0, 0, 0, 0.1);
+  --orange-bg-gradient: linear-gradient(256.88deg, #ce5a1b 0%, #feaa3b 100.01%);
+  --btn-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
 }
 
 body {
@@ -61,6 +67,7 @@ a {
 }
 
 img {
+  display: block;
   max-width: 100%;
 }
 
@@ -75,7 +82,15 @@ button {
   padding-inline: 32px;
   font-size: 18px;
   border-radius: 25px;
-  transition: all 150ms ease;
+  transition: all 240ms ease;
+}
+
+.btn-big {
+  height: 54px;
+  padding-inline: 32px;
+  font-size: 18px;
+  border-radius: 28px;
+  transition: all 240ms ease;
 }
 
 .green-btn {
@@ -84,7 +99,8 @@ button {
 }
 
 .green-btn:hover {
-  background-color: var(--text-green);
+  background-color: var(--light-green);
+  box-shadow: var(--btn-box-shadow);
 }
 
 .orange-btn {
@@ -93,7 +109,8 @@ button {
 }
 
 .orange-btn:hover {
-  background-color: var(--dark-orange);
+  background-color: var(--orange-btn);
+  box-shadow: var(--btn-box-shadow);
 }
 
 .btn-orange-gradient {
@@ -103,6 +120,7 @@ button {
 
 .btn-orange-gradient:hover {
   background: var(--btn-orange-gradient-hover);
+  box-shadow: var(--btn-box-shadow);
 }
 
 .transparent-green-btn {
@@ -113,11 +131,17 @@ button {
 
 .transparent-green-btn:hover {
   color: var(--white);
-  background-color: var(--btn-green);
+  background-color: var(--light-green);
+  box-shadow: var(--btn-box-shadow);
 }
 
 .white-btn {
   background-color: var(--white);
+}
+
+.white-btn:hover {
+  background-color: var(--light-green-600);
+  box-shadow: var(--btn-box-shadow);
 }
 
 .mobile {
@@ -148,6 +172,7 @@ button {
 
 .second-title {
   font-size: 48px;
+  line-height: 1.21;
   font-weight: 600;
 }
 
@@ -165,7 +190,7 @@ button {
 }
 
 .main-shadow {
-  box-shadow: var(--main-shadows);
+  box-shadow: var(--btn-box-shadow);
 }
 
 .rating-stars {
@@ -238,7 +263,7 @@ button {
 
 @media screen and (max-width: 991px) {
   .container {
-    padding-inline: 16px;
+    padding-inline: 19px;
   }
 
   .btn:not(.mobile-big-btn) {

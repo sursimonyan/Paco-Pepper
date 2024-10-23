@@ -1,0 +1,74 @@
+.transfer {
+  margin-bottom: 64px;
+}
+
+.transfer__title {
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.transfer__inner {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.transfer__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 352px;
+  min-height: 378px;
+  gap: 16px;
+  width: 33%;
+  padding: 32px 32px 0;
+  background-color: var(--light-green-600);
+  border-radius: 16px;
+  box-shadow: var(--main-shadows);
+}
+
+.transfer__item h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.transfer__item p {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.transfer__btn {
+  display: block;
+  margin-inline: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .transfer {
+    margin-bottom: 28px;
+  }
+
+  .transfer__title {
+    margin-bottom: 48px;
+  }
+  
+  .transfer__inner {
+    margin-bottom: 48px;
+  }
+
+  .transfer__btn {
+    max-width: 287px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .transfer__inner {
+    flex-direction: column;
+  }
+  
+  .transfer__item {
+    max-width: 100%;
+    width: 100%;
+  }
+}
