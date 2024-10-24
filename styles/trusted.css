@@ -62,7 +62,7 @@
 
 .trusted__videos_item:nth-child(odd) {
   top: -95px;
-  animation: scrollAnimation 4s linear infinite;
+  animation: scrollAnimation 4.5s linear infinite;
 }
 
 .trusted__videos_item:nth-child(even) {
@@ -141,6 +141,7 @@
   .trusted__videos_item:nth-child(odd),
   .trusted__videos_item:nth-child(even) {
     top: 0;
+    animation: none;
   }
 
   .trusted__videos:before {
