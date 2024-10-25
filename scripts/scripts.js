@@ -1,5 +1,5 @@
 const mediaQuery = window.matchMedia('(min-width: 991px)')
-const header__mobile_menu = document.querySelector('.header__mobile_menu');
+const header__mobile_menu = document.querySelector('.header__mobile_menu img');
 const header__menu_close = document.querySelector('.header__menu_close');
 const faq__text_wrap = document.querySelector('.faq__text_wrap');
 const faq__package_info = document.querySelectorAll('.faq__package_info');
