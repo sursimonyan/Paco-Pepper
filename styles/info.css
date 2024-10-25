@@ -57,6 +57,7 @@
   .info__left {
     max-width: 100%;
     width: 100%;
+    row-gap: 16px;
   }
 
   .info__right {

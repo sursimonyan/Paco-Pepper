@@ -1,0 +1,157 @@
+.produce {
+  margin-bottom: 96px;
+}
+
+.produce__title {
+  margin-bottom: 80px;
+}
+
+.produce__inner {
+  position: relative;
+  margin-bottom: 64px;
+}
+
+.produce__item {
+  display: flex;
+  gap: 32px;
+  max-width: 928px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 32px;
+  background-color: var(--light-green-600);
+  border-radius: 16px;
+}
+
+.produce__item_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 416px;
+  width: 50%;
+  background: url('../../images/about-produce-1.png') top left/auto 200px no-repeat;
+}
+
+.produce__item_info h4 {
+  margin-bottom: 32px;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--text-green);
+}
+
+.produce__item_info p {
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  line-height: 1.445;
+  color: var(--text-green);
+}
+
+.produce__item_image {
+  max-width: 416px;
+  width: 50%;
+  max-height: 464px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.produce__item_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.produce__control {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 28px;
+  padding: 8px;
+  border: 1px solid var(--btn-green);
+  transform: translateY(-50%);
+  border-radius: 14px;
+}
+
+.produce__control span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--light-green);
+  cursor: pointer;
+}
+
+.produce__control span.active,
+.produce__control span:hover {
+  background-color: var(--btn-green);
+}
+
+.produce__control i {
+  cursor: pointer;
+}
+
+.produce__btn {
+  display: block;
+  margin-inline: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .produce {
+    margin-bottom: 40px;
+  }
+
+  .produce__title {
+    margin-bottom: 40px;
+  }
+  
+  .produce__inner {
+    margin-bottom: 32px;
+  }
+
+  .produce__item {
+    margin-bottom: 32px;
+    padding: 16px;
+  }
+
+  .produce__control {
+    justify-content: center;
+    transform: none;
+    border: none;
+  }
+
+  .produce__control {
+    position: static;
+    flex-direction: row;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .produce__item {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  .produce__item_info {
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 125px;
+    background-position: left bottom -95px;
+  }
+
+  .produce__item_image {
+    position: relative;
+    padding-top: 90%;
+    order: -1;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .produce__item_image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

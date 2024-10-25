@@ -41,12 +41,26 @@
   --main-shadows: 0 2px 25px 0 rgba(0, 0, 0, 0.1);
   --orange-bg-gradient: linear-gradient(256.88deg, #ce5a1b 0%, #feaa3b 100.01%);
   --btn-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-
+  --bg-pink: #FFF2E8;
+  --bg-light-blue: #ECF1F7;
+  --bg-light-yellow: #FFFDE8;
 }
 
 body {
   font-family: "Alexandria", sans-serif;
   background-color: var(--light-green-100);
+}
+
+.bg-pink {
+  background-color: var(--bg-pink);
+}
+
+.bg-light-blue {
+  background-color: var(--bg-light-blue);
+}
+
+.bg-light-yellow {
+  background-color: var(--bg-light-yellow);
 }
 
 input {

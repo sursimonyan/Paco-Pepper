@@ -1,0 +1,53 @@
+.about__banner {
+  display: flex;
+  height: 60vmax;
+  max-height: 477px;
+  background: url('../../images/about-banner.jpg') center/cover no-repeat;
+  margin-bottom: 64px;
+} 
+
+.about__banner_inner {
+  margin-block: auto;
+  color: var(--white);
+}
+
+.about__banner_inner h1 {
+  margin-bottom: 32px;
+  font-size: 72px;
+  font-weight: 800;
+}
+
+.about__banner_inner p {
+  max-width: 544px;
+  width: 100%;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  line-height: 1.445;
+}
+
+@media screen and (max-width: 991px) {
+  .about__banner_inner h1 {
+    font-size: 48px;
+  }
+
+  .about__banner {
+    margin-bottom: 24px;
+  }
+
+  .about__banner_inner p {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about__banner_inner p {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about__banner {
+    min-height: 390px;
+  }
+}
