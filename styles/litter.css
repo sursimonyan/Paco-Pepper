@@ -7,7 +7,7 @@
 
 .litter__left {
   max-width: 544px;
-  width: 48%;
+  width: 50%;
 }
 
 .litter__slider {
@@ -68,8 +68,9 @@
 }
 
 .litter__right {
-  max-width: 480px;
-  width: 48%;
+  max-width: 544px;
+  padding-inline: 32px;
+  width: 50%;
 }
 
 .litter__title {
@@ -83,7 +84,6 @@
 }
 
 .litter__rating_name {
-  margin-left: 9px;
   font-family: "Jost", sans-serif;
   font-size: 16px;
   color: var(--text-green);
@@ -132,7 +132,9 @@
 
 .litter__bags_item {
   position: relative;
-  width: 150px;
+  flex: 1 0 auto;
+  max-width: 150px;
+  width: 31%;
   height: 144px;
   font-size: 16px;
   font-weight: 600;
@@ -168,6 +170,10 @@
   margin-bottom: 16px;
   font-size: 16px;
   color: var(--text-green);
+}
+
+.litter__bags_item_bottom img {
+  margin-inline: auto;
 }
 
 .litter__bags_item_info {

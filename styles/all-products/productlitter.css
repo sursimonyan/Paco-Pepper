@@ -1,0 +1,312 @@
+.productlitter__wrap {
+  margin-bottom: 64px;
+}
+
+.productlitter {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+  background-color: var(--white);
+  border: 2px solid var(--btn-green);
+  border-radius: 16px;
+}
+
+.productlitter__left {
+  max-width: 352px;
+  width: 34%;
+}
+
+.productlitter__slider {
+  margin-bottom: 32px;
+}
+
+.productlitter__slider_main_image_wrapper {
+  position: relative;
+  aspect-ratio: 1/1;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.productlitter__slider_main_image {
+  height: 100%;
+}
+
+.productlitter__slider_main_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productlitter__slider_arrow_left,
+.productlitter__slider_arrow_right {
+  position: absolute;
+  display: block;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  transform: translateY(-50%);
+}
+
+.productlitter__slider_arrow_left {
+  left: 16px;
+}
+
+.productlitter__slider_arrow_right {
+  right: 16px;
+}
+
+.productlitter__slider_items {
+  display: flex;
+  column-gap: 16px;
+}
+
+.productlitter__slider_items > div {
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.productlitter__slider_items > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productlitter__right {
+  max-width: 672px;
+  width: 64%;
+}
+
+.productlitter__rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.productlitter__rating_name {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  color: var(--text-green);
+}
+
+.productlitter__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.productlitter__title {
+  font-size: 32px;
+  line-height: 1.21;
+  font-weight: 700;
+  color: var(--text-green);
+}
+
+.productlitter__price_wrap {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.productlitter__from {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  color: var(--text-green);
+}
+
+.productlitter__price {
+  font-size: 32px;
+  line-height: 1.21;
+  font-weight: 700;
+  color: var(--btn-green);
+}
+
+.productlitter__quantity {
+  margin-bottom: 32px;
+  font-size: 16px;
+  line-height: 1.21;
+  font-weight: 600;
+  color: var(--text-green);
+}
+
+.productlitter__bags {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.productlitter__bags_item {
+  position: relative;
+  max-width: 213px;
+  width: 32%;
+  height: 144px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-green);
+  border: 1px solid var(--btn-green);
+  border-radius: 8px;
+}
+
+.productlitter__bags_item_choosed {
+  border-width: 2px;
+}
+
+.productlitter__bags_best_saving {
+  border-color: var(--grey);
+}
+
+.productlitter__bags_item_top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border-bottom: 1px solid var(--btn-green);
+}
+
+.productlitter__bags_item_bottom {
+  padding: 9px 6px 14px;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+}
+
+.productlitter__bags_item_bottom p {
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: var(--text-green);
+}
+
+.productlitter__bags_item_bottom img {
+  margin-inline: auto;
+}
+
+.productlitter__bags_item_info {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 32px);
+  height: 16px;
+  font-family: "Jost", sans-serif;
+  font-size: 8px;
+  font-weight: 500;
+  border-radius: 4px 4px 0 0;
+  transform: translateX(-50%);
+}
+
+.most_popular {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+.best_saving {
+  color: var(--btn-green);
+  background-color: var(--light-green);
+}
+
+.productlitter__bags_item_choosed .productlitter__bags_item_top {
+  color: var(--white);
+  background-color: var(--btn-green);
+}
+
+.productlitter__bags_item_choosed .productlitter__bags_item_bottom {
+  background-color: var(--light-green-600);
+}
+
+.productlitter__bags_best_saving .productlitter__bags_item_top {
+  border-color: var(--grey);
+}
+
+.productlitter__bags_item_price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.productlitter__bags_item_price span {
+  font-family: "Jost", sans-serif;
+  font-size: 8px;
+  font-weight: 500;
+  color: var(--orange);
+  text-decoration: line-through;
+}
+
+.productlitter__select_wrap  {
+  margin-bottom: 16px;
+}
+
+.productlitter__select_wrap h4 {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.21;
+  font-weight: 600;
+  color: var(--text-green);
+}
+
+.productlitter__select {
+  width: 100%;
+  padding: 7px 4px;
+  font-family: "Jost", sans-serif;
+  font-size: 12px;
+  color: var(--text-green);
+  border-color: currentColor;
+  border-radius: 4px;
+  outline: none;
+}
+
+.productlitter__buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.productlitter__btn {
+  padding-inline: 16px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 991px) {
+  
+}
+
+@media screen and (max-width: 768px) {
+  .productlitter__wrap {
+    margin-bottom: 27px;
+  }
+
+  .productlitter {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .productlitter__top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .productlitter__slider {
+    margin-bottom: 16px;
+  }
+
+  .productlitter__left,
+  .productlitter__right {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .productlitter__buttons {
+    flex-direction: column;
+  }
+
+  
+
+}
