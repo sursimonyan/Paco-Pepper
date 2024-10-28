@@ -84,12 +84,6 @@
   .offer__text {
     padding: 16px;
   }
-
-  .offer__btn {
-    display: block;
-    max-width: 320px;
-    margin-inline: auto;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -106,6 +100,12 @@
   .offer__text {
     max-width: 100%;
     width: 100%;
+  }
+
+  .offer__btn {
+    display: block;
+    max-width: 320px;
+    margin-inline: auto;
   }
 }
 

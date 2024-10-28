@@ -45,6 +45,8 @@
   --bg-light-blue: #ECF1F7;
   --bg-light-yellow: #FFFDE8;
   --light-grey: #F9F9F9;
+  --reviews-gradient: linear-gradient(180deg, rgba(254, 255, 251, 0) 0%, rgb(254, 255, 251) 50%);
+
 }
 
 body {
@@ -156,6 +158,7 @@ button {
 }
 
 .white-btn {
+  color: var(--dark-orange);
   background-color: var(--white);
 }
 

@@ -1,0 +1,61 @@
+.fanssaying__second {
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 50px;
+}
+
+.fanssaying__first {
+  margin-bottom: 0;
+}
+
+.fanssaying__first .fanssaying__inner {
+  margin-bottom: 0;
+}
+
+.fanssaying__second .fanssaying__inner {
+  top: 32px;
+  margin-bottom: 0;
+}
+
+.fanssaying__btn {
+  position: relative;
+  display: block;
+  height: 41px;
+  margin-inline: auto;
+  padding-inline: 16px;
+  font-size: 14px;
+  color: var(--btn-green);
+  background-color: transparent;
+  border: 1px solid currentColor;
+  border-radius: 22px;
+  transition: all 250ms ease;
+  z-index: 3;
+}
+
+.fanssaying__btn:hover {
+  color: var(--text-green);
+  background-color: var(--light-green-100);
+  box-shadow: var(--main-shadows);
+}
+
+.fanssaying__second:before {
+  content: "";
+  position: absolute;
+  bottom: 26px;
+  left: 0;
+  width: 100%;
+  height: 256px;
+  background: var(--reviews-gradient);
+  z-index: 2;
+}
+
+@media screen and (max-width: 991px) {
+  .fanssaying__second {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+ 
+}
