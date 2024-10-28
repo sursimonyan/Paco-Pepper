@@ -1,0 +1,95 @@
+.contact {
+  margin-block: 32px;
+}
+
+.contact__title {
+  margin-bottom: 32px;
+  line-height: 1.2;
+}
+
+.contact__inner {
+  display: flex;
+  gap: 32px 48px;
+}
+
+.contact__left {
+  max-width: 450px;
+  width: 41%;
+  max-height: 698px;
+  height: 60vmax;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.contact__left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact__right {
+  max-width: 622px;
+  width: 56%;
+}
+
+.contact__email {
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-green);
+}
+
+.contact__email_address {
+  margin-bottom: 32px;
+  font-size: 14px;
+  color: var(--btn-green);
+}
+
+.contact__social h4 {
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-green);
+}
+
+.contact__social div {
+  display: flex;
+  column-gap: 32px;
+  margin-bottom: 32px;
+}
+
+.contact__have_question h4 {
+  margin-bottom: 16px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-green);
+}
+
+@media screen and (max-width: 991px) {
+  .contact {
+    margin-bottom: 16px;
+  }
+
+  .contact__title {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact__inner {
+    flex-direction: column;
+  }
+
+  .contact__left,
+  .contact__right {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contact__left {
+    height: 300px;
+  }
+}
