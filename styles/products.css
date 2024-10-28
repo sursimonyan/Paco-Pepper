@@ -121,7 +121,12 @@
     margin-bottom: 40px;
   }
 
+  .products__title {
+    margin-bottom: 0;
+  }
+
   .products__inner {
+    padding-top: 24px;
     column-gap: 16px;
     margin-bottom: 0;
     padding-bottom: 16px;

@@ -32,16 +32,11 @@
 }
 
 @media screen and (max-width: 991px) {
+  .main__products_section {
+    background: none;
+  }
+
   .allproducts__inner {
     padding-inline: 19px;
   }
-}
-
-@media screen and (max-width: 768px) {
-
-}
-
-@media screen and (max-width: 576px) {
-
-
 }

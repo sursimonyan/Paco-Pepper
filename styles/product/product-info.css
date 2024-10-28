@@ -1,0 +1,236 @@
+.main__products_section {
+  background: url("../../images/products-main-bg.png") center top / cover no-repeat;
+}
+
+.productinfo {
+  margin-bottom: 128px;
+}
+
+.productinfo__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.productinfo__left {
+  max-width: 448px;
+  width: 40%;
+}
+
+.productinfo__slider_main_image_wrapper {
+  position: relative;
+  aspect-ratio: 1/1;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.productinfo__slider_main_image {
+  height: 100%;
+}
+
+.productinfo__slider_main_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productinfo__slider_arrow_left,
+.productinfo__slider_arrow_right {
+  position: absolute;
+  display: block;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  transform: translateY(-50%);
+}
+
+.productinfo__slider_arrow_left {
+  left: 16px;
+}
+
+.productinfo__slider_arrow_right {
+  right: 16px;
+}
+
+.productinfo__slider_items {
+  display: flex;
+  column-gap: 16px;
+}
+
+.productinfo__slider_items > div {
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.productinfo__slider_items > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productinfo__right {
+  max-width: 640px;
+  width: 58%;
+}
+
+.productinfo__title {
+  margin-bottom: 16px;
+}
+
+.productinfo__description {
+  margin-bottom: 18px;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  color: var(--text-green);
+}
+
+.productinfo__bag_info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--grey);
+}
+
+.productinfo__bag_info_item {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  width: 50%;
+  margin-bottom: 8px;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  color: var(--text-green);
+}
+
+.productinfo__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  color: var(--text-green);
+  border-bottom: 1px solid var(--grey);
+}
+
+.productinfo__price {
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--btn-green);
+}
+
+.productinfo__card {
+  display: flex;
+  column-gap: 32px;
+  margin-bottom: 40px;
+}
+
+.productinfo__count {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+  padding-inline: 16px;
+  border: 1px solid var(--btn-green);
+  box-shadow: 0px 0px 0px 1px rgba(46, 42, 57, 1),
+    0px 0px 0px 1.3px rgba(237, 255, 167, 0.45);
+  border-radius: 8px;
+}
+
+.productinfo__count span {
+  display: flex;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  color: var(--text-green);
+  cursor: pointer;
+}
+
+.productinfo__count_minus i {
+  margin-left: auto;
+}
+
+.productinfo__count_plus i {
+  margin-right: auto;
+}
+
+.productinfo__count input {
+  width: 70px;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  color: var(--text-green);
+  text-align: center;
+  border: none;
+}
+
+.productinfo__count input::-webkit-inner-spin-button,
+.productinfo__count input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.productinfo__count input {
+  -moz-appearance: textfield;
+}
+
+.productinfo__shipping_item h4 {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: var(--text-green);
+}
+
+.productinfo__shipping {
+  display: flex;
+  gap: 16px;
+}
+
+.productinfo__shipping_item p {
+  font-family: "Jost", sans-serif;
+  font-size: 12px;
+  color: var(--text-green);
+} 
+
+@media screen and (max-width: 991px) {
+  .main__products_section {
+    background: none;
+  }
+
+  .productinfo {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .productinfo__inner {
+    flex-direction: column;
+  }
+
+  .productinfo__left,
+  .productinfo__right {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .productinfo__shipping {
+    flex-direction: column;
+  }
+
+  .productinfo__card {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+}

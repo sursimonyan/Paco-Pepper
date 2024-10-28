@@ -16,10 +16,6 @@
   width: 34%;
 }
 
-.productlitter__slider {
-  margin-bottom: 32px;
-}
-
 .productlitter__slider_main_image_wrapper {
   position: relative;
   aspect-ratio: 1/1;
@@ -307,6 +303,6 @@
     flex-direction: column;
   }
 
-  
+
 
 }
